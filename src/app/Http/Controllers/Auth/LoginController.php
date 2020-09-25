@@ -54,21 +54,20 @@ class LoginController extends Controller
     {
         $param = $request->only(['email', 'password']);
 
-        $user = User::where('email', $param['email'])->exists();
-        if (!$user) {
-            return redirect()->back()->with('error', 'user không tồn tại')->withInput();
+        $user = User::where('email', $param['email'])->first();
+        if (!isset($user)) {
+            return redirect()->back()->with('error', 'Tài khoản không tồn tại!');
         }
 
-        if ($user->status != User::STATUS_ACTIVATED) {
-            return redirect()->back()->with('error', 'tài khoản chưa kích hoạt')->withInput();
+        if ($user->email_verified_at === '') {
+            return redirect()->back()->with('error', 'Tài khoản chưa được kích hoạt');
         }
 
         if (Auth::attempt($param)) {
             dd(1);
+        } else {
+            return redirect()->back()->with('error', 'Tài khoản hoặc mật khẩu không chính xác');
         }
-
-        return redirect()->back()->with('error', __('validation.login.format.transaction_id'))->withInput();
-
     }
 
     public function logout()

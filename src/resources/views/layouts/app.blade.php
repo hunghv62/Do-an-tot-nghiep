@@ -10,10 +10,14 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/jquery-3.5.1.min.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.bundle.js') }}" defer></script>
+    <script src="{{ asset('toastr/toastr.min.js') }}" defer></script>
+    <script src="{{ asset('js/jquery.validate.js') }}" defer></script>
+    <script src="{{ asset('js/additional-methods.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -24,9 +28,12 @@
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-grid.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-reboot.css') }}" rel="stylesheet">
+    <link href="{{ asset('toastr/toastr.css') }}" rel="stylesheet">
+
 </head>
 <body>
     @yield('style')
+        @yield('script')
 
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -78,6 +85,7 @@
             @yield('content')
         </main>
     </div>
-    @yield('script')
+    @include('layouts.toastr')
+
 </body>
 </html>
