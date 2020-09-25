@@ -1,0 +1,6 @@
+.error {
+    color: red;
+}
+.error:not(label) {
+    border: solid 1px red !important;
+}
