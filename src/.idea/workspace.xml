@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c602d7c-8988-4c2f-a849-f17364ff8ed2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../logs/mysql-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/mysql-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logs/mysql-query.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/mysql-query.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logs/mysql-slow.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/mysql-slow.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/VerifyEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/VerifyEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/VerifyEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/VerifyEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/mail/verify_email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/mail/verify_email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +147,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/auth/mail" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -155,7 +166,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0c602d7c-8988-4c2f-a849-f17364ff8ed2" name="Default Changelist" comment="" />
@@ -165,16 +179,18 @@
       <updated>1600681141531</updated>
       <workItem from="1600681142795" duration="578000" />
       <workItem from="1601001369565" duration="21989000" />
+      <workItem from="1601215944193" duration="5975000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601019411071">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1601223572159">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601223572159" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601019411071" />
   </component>
 </project>
