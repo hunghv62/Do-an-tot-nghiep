@@ -11,6 +11,10 @@ Route::get('verify/{id}', [App\Http\Controllers\UserController::class, 'verify']
 
 Route::middleware('auth')->group(function () {
     Route::get('index', [App\Http\Controllers\UserController::class, 'index'])->name('index');
+
+    Route::get('chat', [App\Http\Controllers\ChatsController::class, 'index']);
+    Route::get('messages', [App\Http\Controllers\ChatsController::class, 'fetchMessages']);
+    Route::post('messages', [App\Http\Controllers\ChatsController::class, 'sendMessage']);
 });
 //Auth::routes();
 //
