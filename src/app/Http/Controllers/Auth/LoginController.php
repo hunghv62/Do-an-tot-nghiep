@@ -44,7 +44,7 @@ class LoginController extends Controller
     public function index()
     {
         if (Auth::check()) {
-            return redirect()->route('index');
+            return redirect()->route('getLogin');
         }
 
         return view('auth.login');
@@ -64,7 +64,7 @@ class LoginController extends Controller
         }
 
         if (Auth::attempt($param)) {
-            dd(1);
+            return redirect()->route('index');
         } else {
             return redirect()->back()->with('error', 'Tài khoản hoặc mật khẩu không chính xác');
         }
@@ -73,6 +73,6 @@ class LoginController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect()->route('index');
+        return redirect()->route('getLogin');
     }
 }

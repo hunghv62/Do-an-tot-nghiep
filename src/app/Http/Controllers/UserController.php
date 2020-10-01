@@ -10,6 +10,10 @@ use App\Jobs\VerifyEmail;
 
 class UserController extends Controller
 {
+    public function index()
+    {
+        return view('home');
+    }
     public function store(UserRequest $request)
     {
         try {
@@ -19,7 +23,7 @@ class UserController extends Controller
             $data['role'] = $request->role ?? User::USER;
             $user = User::create($data);
             VerifyEmail::dispatch($user);
-            return redirect()->route('index')->with('success', 'Đăng ký thành công');
+            return redirect()->route('getLogin')->with('success', 'Đăng ký thành công');
         } catch (\Exception $e) {
             return back()->with('error', $e->getMessage());
         }
@@ -29,7 +33,6 @@ class UserController extends Controller
         $user = User::find(base64_decode($id));
         $user->email_verified_at = Carbon::now();
         $user->save();
-        dd('đăng nhập luôn vào sử dụng');
-        return 1;
+        return redirect()->route('index');
     }
 }

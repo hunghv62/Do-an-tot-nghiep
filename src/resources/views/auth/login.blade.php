@@ -11,7 +11,7 @@
                         <form action="{{ route('login') }}" method="post" id="login">
                             @csrf
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email" required= name="email"
+                                <input type="email" class="form-control" placeholder="Email" required name="email"
                                        data-msg-required="Hãy nhập email"
                                        data-msg-email="Hãy nhập đúng định dạng email">
                             </div>
