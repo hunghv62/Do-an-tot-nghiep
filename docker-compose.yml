@@ -12,6 +12,14 @@ services:
     volumes:
       - ${PROJECT_PATH:-./src}:/var/www/${APP_NAME:-app}
       - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+
+  node-api:
+    image: node:12.14-alpine
+    tty: true
+    volumes:
+      - ${PROJECT_PATH:-./src}:/work/app:delegated
+    working_dir: /work/app
+
   db:
     container_name: ${APP_NAME:-app}_db
     image: mysql:8.0
