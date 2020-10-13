@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0c602d7c-8988-4c2f-a849-f17364ff8ed2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_25_085737_add_column_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_25_085737_add_column_user_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +177,8 @@
       <workItem from="1600681142795" duration="578000" />
       <workItem from="1601001369565" duration="21989000" />
       <workItem from="1601215944193" duration="5975000" />
-      <workItem from="1602574058282" duration="3460000" />
+      <workItem from="1602574058282" duration="4061000" />
+      <workItem from="1602582517900" duration="617000" />
     </task>
     <servers />
   </component>

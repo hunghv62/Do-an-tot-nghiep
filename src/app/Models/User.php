@@ -20,6 +20,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $dateFormat = 'Y-m-d h:m:s.v';
+
     protected $fillable = [
         'name',
         'email',
