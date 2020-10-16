@@ -1,4 +1,4 @@
-lưu vào db: id phòng chat, còn lưu như nào tính sau, type phòng chat: 1vs1, group chat (>=2), bài viết (comment)
+***lưu vào db: id phòng chat, còn lưu như nào tính sau, type phòng chat: 1vs1, group chat (>=2), bài viết (comment)
 I. chat 1 vs 1
 1-khi call event -> append message bằng jquery, đồng thời call ajax lưu message vào db khi có bất kỳ thay đổi nào tại khung chat (khi append xong)
 2-khi load lại trang mình sẽ đổ lại data ra khung chat, tuy nhiên do độ trễ sẽ xảy ra trường hợp: chưa load xong mà có 1 loạt event được call
@@ -14,7 +14,10 @@ message_table: id, user_created, post_id, type, reply_to, user_join, content_tex
 type: 1-private_chat; 2-group_chat; 3-comment
 reply_to: reply to message_id
 
-db: 1-user (hiện tại chưa có admin)
+***db: 1-user (hiện tại chưa có admin)
     2-post : các bài viết
     3-room : phòng chat (chat riêng, chat nhóm, comment bài viết)
     4-message: nội dung message
+
+***phát sinh vấn đề: chỉ hiển thị thông báo tin nhắn mới tới người khác không phải mình 
+=> đã thêm flag người tạo tin nhắn => chỉ khác người tạo mới nhận được tin nhắn mới
