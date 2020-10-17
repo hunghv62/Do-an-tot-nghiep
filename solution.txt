@@ -21,3 +21,9 @@ reply_to: reply to message_id
 
 ***phát sinh vấn đề: chỉ hiển thị thông báo tin nhắn mới tới người khác không phải mình 
 => đã thêm flag người tạo tin nhắn => chỉ khác người tạo mới nhận được tin nhắn mới
+
+***cấu hình  pusher private chanel
+1 thêm csrf token vào, 2 lấy api authen token từ pusher => authenEndpoint
+
+todo: mỗi private chanel sẽ mang id của room chat, từ đó ai thuộc room nào sẽ nhận được tin nhắn từ room đó
+ (gửi thì oke, nhận và thông báo tới những người thuộc room mới khó, tạm thời bỏ qua status seen)

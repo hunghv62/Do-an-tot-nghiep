@@ -21,12 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a755f45-705c-4d4a-af2c-9d6f5ca7c172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Events/MyEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Events/MyEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/solution.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +187,7 @@
       <workItem from="1602639631451" duration="6983000" />
       <workItem from="1602813378603" duration="9088000" />
       <workItem from="1602833462137" duration="324000" />
-      <workItem from="1602900100938" duration="5981000" />
+      <workItem from="1602900100938" duration="6787000" />
     </task>
     <servers />
   </component>
