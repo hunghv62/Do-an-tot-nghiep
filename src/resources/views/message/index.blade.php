@@ -19,10 +19,17 @@
             Pusher.logToConsole = true;
 
             var pusher = new Pusher('d707decfb907126d1546', {
-                cluster: 'ap3'
+                cluster: 'ap3',
+                auth: {
+                    headers: {
+                        'X-CSRF-Token': '{{ csrf_token() }}'
+                    }
+                },
+                authEndpoint: '{{ route('pusherAuth') }}'
             });
 
-            var channel = pusher.subscribe('my-channel');
+            // var channel = pusher.subscribe('my-channel');
+            var channel = pusher.subscribe('private-message');
             channel.bind('my-event', function (data) {
                 if (data.user_created != {{ auth()->id() }}) {
                     let html = '<div>' + data.message + '</div>';

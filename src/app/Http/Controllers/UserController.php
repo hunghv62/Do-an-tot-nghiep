@@ -35,4 +35,19 @@ class UserController extends Controller
         $user->save();
         return redirect()->route('index');
     }
+
+    public function pusherAuth()
+    {
+        $user = auth()->user();
+        if ($user) {
+            $pusher = new \Pusher\Pusher(config('broadcasting.connections.pusher.key'), config('broadcasting.connections.pusher.secret'), config('broadcasting.connections.pusher.app_id'));
+            echo $pusher->socket_auth('private-message', request()->input('socket_id'));
+            return;
+        }else {
+            header('', true, 403);
+            echo "Forbidden";
+            return;
+        }
+    }
+
 }

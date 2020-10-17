@@ -15,6 +15,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/', [App\Http\Controllers\MessageController::class, 'getMessage'])->name('index');
         Route::post('/store', [App\Http\Controllers\MessageController::class, 'storeMessage'])->name('store');
     });
+    Route::post('pusher/auth', [App\Http\Controllers\UserController::class, 'pusherAuth'])->name('pusherAuth');
 });
 //Auth::routes();
 //
