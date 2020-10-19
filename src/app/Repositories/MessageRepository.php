@@ -9,11 +9,11 @@ class MessageRepository
 {
     public function getAll()
     {
-        Message::all();
+        return Message::all();
     }
 
     public function store($data)
     {
-        Message::create($data);
+        return Message::create($data);
     }
 }

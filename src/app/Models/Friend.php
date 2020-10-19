@@ -13,6 +13,15 @@ class Friend extends Model
     const ACCEPTED = 1;
     const REJECTED = 2;
     const PENDING = 3;
+    const STATUS_TEXT = [
+        self::ACCEPTED => 'Friends',
+        self::PENDING => 'Requested',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'friend_id', 'id');
+    }
 
     protected $fillable = ['user_created', 'friend_id', 'status'];
 }
