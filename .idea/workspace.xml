@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a755f45-705c-4d4a-af2c-9d6f5ca7c172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/src/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +161,9 @@
       <updated>1601437094157</updated>
       <workItem from="1601437095849" duration="391000" />
       <workItem from="1601570944842" duration="299000" />
+      <workItem from="1602403125562" duration="520000" />
+      <workItem from="1602472238495" duration="8000" />
+      <workItem from="1603631255249" duration="603000" />
     </task>
     <servers />
   </component>
