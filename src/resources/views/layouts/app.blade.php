@@ -22,6 +22,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -36,6 +38,41 @@
         @yield('script')
 
     <div id="app">
+        <div class="menu">
+            <div class="menuContainer">
+                <div class="faceicon">
+                    <a href="#">
+                        <i class="fab fa-facebook-f" width="24px" height="24px"></i>
+                    </a>
+                </div>
+                <form action="search">
+                    <input type="text" class ="search" method="get" placeholder="Tìm kiếm" >
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="afterSearchBar">
+                    <a href="#">
+                        <span class="img"><img src="" alt=""></span>
+                        <span>User name</span>
+                    </a>
+
+                    <a href="#">Trang chủ</a>
+
+                    <a href="#">Tạo</a>
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fas fa-user-friends"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -80,7 +117,6 @@
                 </div>
             </div>
         </nav>
-
         <main class="py-4">
             @yield('content')
         </main>

@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c602d7c-8988-4c2f-a849-f17364ff8ed2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../logs/mysql-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/mysql-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/mysql-query.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/mysql-query.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/mysql-slow.log" beforeDir="false" afterPath="$PROJECT_DIR$/../logs/mysql-slow.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/VerifyEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/VerifyEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/VerifyEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/VerifyEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/mail/verify_email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/mail/verify_email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_25_085737_add_column_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_25_085737_add_column_user_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +132,8 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/pusher/pusher-php-server" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/sodium_compat" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hocySM7N5HUIqeFx1HX2DoMBcd" />
@@ -166,7 +163,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -180,11 +177,13 @@
       <workItem from="1600681142795" duration="578000" />
       <workItem from="1601001369565" duration="21989000" />
       <workItem from="1601215944193" duration="5975000" />
+      <workItem from="1602574058282" duration="4061000" />
+      <workItem from="1602582517900" duration="851000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1601223572159">

@@ -1,0 +1,29 @@
+***lưu vào db: id phòng chat, còn lưu như nào tính sau, type phòng chat: 1vs1, group chat (>=2), bài viết (comment)
+I. chat 1 vs 1
+1-khi call event -> append message bằng jquery, đồng thời call ajax lưu message vào db khi có bất kỳ thay đổi nào tại khung chat (khi append xong)
+2-khi load lại trang mình sẽ đổ lại data ra khung chat, tuy nhiên do độ trễ sẽ xảy ra trường hợp: chưa load xong mà có 1 loạt event được call
+-> bị miss data không lưu vào db và cũng có thể không đsung trình tự message
+=> solution: trước mắt là khi call event sẽ lưu db luôn, và đồng thời vẫn thực hiện việc append client cho giống thực, như vậy sẽ không xảy ra 2 tình huống,
+ mỗi lần append tại 1 client lại lưu db 1 lần, thay vào đó là lưu tại thời điểm gửi đi 1 lần duy nhất
+-> tuy nhiên lại xuất hiện 1 tình huống nữa là message bị xóa, hơn nữa có thể message kèm media hoặc media
+-> như vậy có thể xác định được là 1 message là 1 bản ghi (khá tởm) => cần tham khảo thêm cách lưu của fb
+II. chat room cũng tương tự, chưa thấy khác méo gì, đại loại tuy phân làm 3 để hiển thị 3 chỗ thôi chứ quy trình hoạt động như nhau =))
+
+=> chốt lưu mỗi message tương ứng 1 record
+message_table: id, user_created, post_id, type, reply_to, user_join, content_text, content_media
+type: 1-private_chat; 2-group_chat; 3-comment
+reply_to: reply to message_id
+
+***db: 1-user (hiện tại chưa có admin)
+    2-post : các bài viết
+    3-room : phòng chat (chat riêng, chat nhóm, comment bài viết)
+    4-message: nội dung message
+
+***phát sinh vấn đề: chỉ hiển thị thông báo tin nhắn mới tới người khác không phải mình 
+=> đã thêm flag người tạo tin nhắn => chỉ khác người tạo mới nhận được tin nhắn mới
+
+***cấu hình  pusher private chanel
+1 thêm csrf token vào, 2 lấy api authen token từ pusher => authenEndpoint
+
+todo: mỗi private chanel sẽ mang id của room chat, từ đó ai thuộc room nào sẽ nhận được tin nhắn từ room đó
+ (gửi thì oke, nhận và thông báo tới những người thuộc room mới khó, tạm thời bỏ qua status seen)

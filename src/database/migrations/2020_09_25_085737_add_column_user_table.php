@@ -14,7 +14,7 @@ class AddColumnUserTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->timestamp('birth_day')->after('password')->nullable();
+            $table->date('birth_day')->after('password')->nullable();
             $table->tinyInteger('gender')->after('birth_day')->nullable();
         });
     }

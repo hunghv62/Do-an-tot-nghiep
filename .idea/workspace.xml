@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a755f45-705c-4d4a-af2c-9d6f5ca7c172" name="Default Changelist" comment="">
+    <list default="true" id="1e82ed42-8343-4bf8-8ab4-9ec3a9de6490" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/solution.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Events/MyEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Helpers/helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/FriendController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/MessageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Models/Friend.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Models/Message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Models/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Models/Room.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Repositories/FriendRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Repositories/MessageRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Repositories/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_10_14_014753_create_messages_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_10_14_020451_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_10_14_021042_create_friends_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2020_10_14_022836_create_rooms_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/css/friend/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/views/friend/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/logs/laravel.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/src/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/MainController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2020_09_25_085737_add_column_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2020_09_25_085737_add_column_user_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/index.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,11 +192,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/Repositories" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Do-an-tot-nghiep\src\app\Repositories" />
+      <recent name="C:\Users\Admin\Desktop\Do-an-tot-nghiep\src\public\css" />
+      <recent name="C:\Users\Admin\Desktop\Do-an-tot-nghiep\src\resources\views" />
+      <recent name="C:\Users\Admin\Desktop\Do-an-tot-nghiep\src\resources\views\message" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -161,24 +220,52 @@
       <updated>1601437094157</updated>
       <workItem from="1601437095849" duration="391000" />
       <workItem from="1601570944842" duration="299000" />
-      <workItem from="1602403125562" duration="520000" />
-      <workItem from="1602472238495" duration="8000" />
-      <workItem from="1603631255249" duration="603000" />
+      <workItem from="1602639631451" duration="6983000" />
+      <workItem from="1602813378603" duration="9088000" />
+      <workItem from="1602833462137" duration="324000" />
+      <workItem from="1602900100938" duration="7573000" />
+      <workItem from="1603090765031" duration="12250000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1601437322959">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="531" y="153" key="NewPhpClassDialog" timestamp="1602813785447">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601437322959" />
-    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1601570957802">
+    <state x="531" y="153" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1602813785447" />
+    <state x="450" y="66" key="RollbackChangesDialog" timestamp="1603632198565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="450" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603632198565" />
+    <state x="617" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602903201586">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="617" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1602903201586" />
+    <state x="556" y="209" width="555" height="534" key="find.popup" timestamp="1603101006163">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="556" y="209" width="555" height="534" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1603101006163" />
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601437322959" />
+    <state x="519" y="187" width="788" height="562" key="search.everywhere.popup" timestamp="1603092278197">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
     <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601570957802" />
+    <state x="519" y="187" width="788" height="562" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603092278197" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601437183822" />
   </component>
 </project>

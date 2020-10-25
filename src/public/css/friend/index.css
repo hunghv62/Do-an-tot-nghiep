@@ -1,0 +1,34 @@
+#list_friend {
+    border: 1px solid #CCCCCC;
+    width: 100%;
+}
+#list_request {
+    border: 1px solid #CCCCCC;
+    width: 100%;
+}
+#find_friend table {
+    border: 1px solid #CCCCCC;
+    width: 100%;
+}
+.logo-head {
+    padding-bottom: 3em;
+    background-color: #f5f6f7;
+    border: 1px solid #CCCCCC;
+}
+button{
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+}
+.logo-head .float-right{
+    padding-top: .5em;
+    padding-right: .5em;
+}
+#list_friend thead{
+    border-bottom: 1px solid #CCCCCC;
+}
+#list_request thead{
+    border-bottom: 1px solid #CCCCCC;
+}
+#find_friend thead{
+    border-bottom: 1px solid #CCCCCC;
+}

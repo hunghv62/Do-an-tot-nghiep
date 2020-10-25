@@ -20,6 +20,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $dateFormat = 'Y-m-d h:m:s.v';
+
     protected $fillable = [
         'name',
         'email',
@@ -47,4 +49,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function setPasswordAttribute($value)
+    {
+        // When reset password by email, the password has already been hashed before coming here
+        // So we need to check if the password needs to be hashed or not
+        $this->attributes['password'] = \Hash::needsRehash($value) ? bcrypt($value) : $value;
+    }
 }
