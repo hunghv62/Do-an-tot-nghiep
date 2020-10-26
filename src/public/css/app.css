@@ -10906,7 +10906,7 @@ input .error:not(label) {
     border: 1px solid red;
 }
 .menu{
-    width: 1349px;
+    width: 100%;
     height: 43px;
     background-color: #2851a3;
     display: grid;
@@ -10930,16 +10930,16 @@ input .error:not(label) {
     color: white;
     font-size: 28px;
 }
-input{
+.menu input{
     border: none;
     border-collapse: none;
 }
-form input{
+.menu form input{
     width: 393px;
     height: 23px;
     border-radius: 2px;
 }
-form button{
+.menu form button{
     height: 25px;
     width: 46px;
     float: right;
