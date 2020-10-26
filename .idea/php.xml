@@ -27,7 +27,6 @@
       <path value="$PROJECT_DIR$/src/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/src/vendor/composer" />
@@ -113,6 +112,7 @@
       <path value="$PROJECT_DIR$/src/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/src/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/src/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/http-client-contracts" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

@@ -10930,16 +10930,16 @@ input .error:not(label) {
     color: white;
     font-size: 28px;
 }
-input{
+.menu input{
     border: none;
     border-collapse: none;
 }
-form input{
+.menu form input{
     width: 393px;
     height: 23px;
     border-radius: 2px;
 }
-form button{
+.menu form button{
     height: 25px;
     width: 46px;
     float: right;

@@ -62,7 +62,7 @@
         </table>
         <div id="find_friend" class="d-none">
             <div class="float-right mt-3 mb-3">
-                <form action="" id="form_search_friend">
+                <form action="" id="form_search_friend" method="post">
                     @csrf
                     <input type="text" placeholder="type name ..." name="key_search">
                     <button type="button" id="search">search</button>
