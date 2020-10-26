@@ -27,7 +27,7 @@
                 <tbody>
                 <tr>
                     <td class="text-center">avatar</td>
-                    <td class="text-left">{{ $row->user->name }}</td>
+                    <td class="text-left">{{ $row->user->name ?? '' }}</td>
                     <td class="text-center">{{ \App\Models\Friend::STATUS_TEXT[$row->status] }}</td>
                     <td class="text-center">
                         <a href="" class="mr-3">Unfriend</a>
@@ -50,7 +50,7 @@
                 <tbody>
                 <tr>
                     <td class="text-center">avatar</td>
-                    <td class="text-left">{{ $row->user->name }}</td>
+                    <td class="text-left">{{ $row->user->name ?? '' }}</td>
                     <td class="text-center">{{ \App\Models\Friend::STATUS_TEXT[$row->status] }}</td>
                     <td class="text-center">
                         <a href="" class="mr-3">accept</a>
@@ -81,6 +81,10 @@
             </table>
         </div>
     </div>
+    <form id="add_friend_form" method="post" class="d-none">
+        @csrf
+        <input type="hidden" name="id" value="">
+    </form>
 @endsection
 @section('script')
     <script>
@@ -110,19 +114,34 @@
                         success: function (res) {
                             console.log(res)
                             let html = '';
-                            $.each(res, function (key, val) {
+                            let html_fake = '';
+                            $.each(res.friends, function (key, val) {
                                 html += '<tr>\n' +
                                     '                    <td class="text-center">avatar</td>\n' +
                                     '                    <td class="text-left">' + val.name + '</td>\n' +
                                     '                    <td class="text-center">\n' +
-                                    '                        <button class="mr-3 add_friend">Add Friend</button>\n' +
+                                    '                        <button class="mr-3 add_friend" data-id="' + val.id + '"';
+
+                                $.each(res.friend_requested, function (key1, val1) {
+                                    if (val1.friend_id == val.id) {
+                                        html_fake += ' disabled >Requested';
+                                        return false;
+                                    }
+                                })
+
+                                if(html_fake == '') {
+                                    html += '>Add Friend';
+                                } else {
+                                    html += html_fake;
+                                }
+                                html += '</button>\n' +
                                     '                    </td>\n' +
-                                    '                </tr>'
+                                    '                </tr>';
                             })
                             $('#body_search').html(html)
 
                             $('.add_friend').on('click', function () {
-                                $(this).text('Requested');
+                                addFriend($(this).data('id'))
                             })
                         },
                         error: function (err) {
@@ -132,6 +151,21 @@
                 }
             });
 
+            function addFriend(id) {
+                $('input[name=id]').val(id)
+                $.ajax({
+                    url: '{{ route('friend.create') }}',
+                    data: $('#add_friend_form').serialize(),
+                    method: 'post',
+                    success: function (res) {
+                        toastr.success(res.success);
+                        $('.add_friend').text('Requested');
+                    },
+                    error: function (err) {
+                        toastr.error(err.responseJSON.message);
+                    }
+                })
+            }
 
         })
     </script>

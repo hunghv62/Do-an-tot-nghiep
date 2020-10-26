@@ -26,8 +26,13 @@ class FriendRepository
 
     public function getFriendRequest()
     {
-        return Friend::where('friend_id', auth()->id())
+        return Friend::where('user_created', auth()->id())
             ->where('status', Friend::PENDING)->get();
     }
 
+    public function getFriendRequested()
+    {
+        return Friend::where('friend_id', auth()->id())
+            ->where('status', Friend::PENDING)->get();
+    }
 }

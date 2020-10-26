@@ -24,7 +24,7 @@ class FriendController extends Controller
     public function index()
     {
         $friends = $this->friendRepository->getFriends();
-        $requests = $this->friendRepository->getFriendRequest();
+        $requests = $this->friendRepository->getFriendRequested();
         return view('friend.index', [
             'data' => $friends,
             'dataRequest' => $requests
@@ -36,11 +36,30 @@ class FriendController extends Controller
         try {
             $key = $request->key_search;
             $friends = $this->userRepository->findUserByName($key);
-            return responseOK($friends);
+            $friend_requested = $this->friendRepository->getFriendRequest();
+            return responseOK([
+                'friends' => $friends,
+                'friend_requested' => $friend_requested
+            ]);
         } catch (\ErrorException $e) {
             return responseError($e->getCode(), $e->getMessage());
         }
 
+    }
+
+    public function create(Request $request)
+    {
+        try {
+            $data = [
+                'user_created' => auth()->id(),
+                'friend_id' => $request->id,
+                'status' => Friend::PENDING,
+            ];
+            $this->friendRepository->store($data);
+            return responseOK(['success' => 'gửi yêu cầu kết bạn thành công']);
+        } catch (\Exception $exception) {
+            return responseError($exception->getCode(), $exception->getMessage());
+        }
     }
 
 }

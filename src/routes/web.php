@@ -18,6 +18,7 @@ Route::middleware('auth')->group(function () {
     Route::prefix('friend')->name('friend.')->group(function () {
         Route::get('/', [App\Http\Controllers\FriendController::class, 'index'])->name('index');
         Route::post('/find_friend', [App\Http\Controllers\FriendController::class, 'search'])->name('find_friend');
+        Route::post('/add_friend', [App\Http\Controllers\FriendController::class, 'create'])->name('create');
     });
     Route::post('pusher/auth', [App\Http\Controllers\UserController::class, 'pusherAuth'])->name('pusherAuth');
 });

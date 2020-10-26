@@ -2,6 +2,7 @@
 
 namespace App\Repositories;
 
+use App\Models\Friend;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -19,6 +20,7 @@ class UserRepository
 
     public function findUserByName($key)
     {
-        return User::where('name', 'like', '%' . $key . '%')->get();
+        return User::where('name', 'like', '%' . $key . '%')
+            ->where('id', '!=', auth()->id())->get();
     }
 }

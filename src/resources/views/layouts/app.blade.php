@@ -18,6 +18,8 @@
     <script src="{{ asset('toastr/toastr.min.js') }}" defer></script>
     <script src="{{ asset('js/jquery.validate.js') }}" defer></script>
     <script src="{{ asset('js/additional-methods.js') }}" defer></script>
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
