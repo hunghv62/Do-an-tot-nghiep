@@ -10905,3 +10905,58 @@ a.text-dark:focus {
 input .error:not(label) {
     border: 1px solid red;
 }
+.menu{
+    width: 1349px;
+    height: 43px;
+    background-color: #2851a3;
+    display: grid;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.34;
+    direction: ltr;
+    unicode-bidi: embed;
+}
+.menuContainer{
+    margin-top: auto;
+    display: inline-flex;
+}
+.menu .faceicon{
+    height: 33px;
+    margin-left: 5%;
+}
+.faceicon .fab{
+    margin-left: 5%;
+    background: #2851a3;
+    color: white;
+    font-size: 28px;
+}
+input{
+    border: none;
+    border-collapse: none;
+}
+form input{
+    width: 393px;
+    height: 23px;
+    border-radius: 2px;
+}
+form button{
+    height: 25px;
+    width: 46px;
+    float: right;
+    padding: 6px 6px;
+    margin-right: 16px;
+    background: #f5f6f7;
+    color: #4b4f56;
+    border: none;
+}
+.menu a{
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    float: center;
+}
+.icons a{
+    color: #1d2129;
+    font-size: 20px;
+}
