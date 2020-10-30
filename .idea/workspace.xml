@@ -20,17 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e82ed42-8343-4bf8-8ab4-9ec3a9de6490" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/Repositories/RoomRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/css/message/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/MessageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Models/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Room.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Repositories/MessageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/MessageRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/views/friend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/friend/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/css/message/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/css/message/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +197,7 @@
       <workItem from="1602900100938" duration="7573000" />
       <workItem from="1603090765031" duration="12250000" />
       <workItem from="1603800513266" duration="16000" />
-      <workItem from="1604069789175" duration="3807000" />
+      <workItem from="1604069789175" duration="7632000" />
     </task>
     <servers />
   </component>
@@ -255,16 +248,5 @@
     <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604070932009" />
     <state x="519" y="187" width="788" height="562" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603092278197" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601437183822" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/resources/views/layouts/app.blade.php</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
