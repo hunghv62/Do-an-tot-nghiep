@@ -31,7 +31,7 @@
                     <td class="text-center">{{ \App\Models\Friend::STATUS_TEXT[$row->status] }}</td>
                     <td class="text-center">
                         <a href="" class="mr-3">Unfriend</a>
-                        <a href="">Message</a>
+                        <a href="{{ route('message.index', $row->id) }}">Message</a>
                     </td>
                 </tr>
                 </tbody>

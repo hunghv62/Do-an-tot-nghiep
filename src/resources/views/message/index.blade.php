@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('stype')
+    <link rel="stylesheet" href="{{ asset('css/message/index.css') }}">
+@endsection
 @section('content')
     <div class="container">
         <h1>Message will be appeared below</h1>
@@ -40,17 +42,17 @@
             let route_send = '{{ route('message.store') }}'
             $('#sendButton').click(function () {
                 $.ajax({
-                    url : route_send,
-                    method : 'post',
-                    data : $('#sendMessage').serialize(),
+                    url: route_send,
+                    method: 'post',
+                    data: $('#sendMessage').serialize(),
                     beforeSend: function () {
                         // $('#sendButton').blockUI();
                     },
                     success: function (response) {
                         let html = '<div ';
-                            if (response.user_created == {{ auth()->id() }}) {
-                                html += 'style="color: blue"'
-                            }
+                        if (response.user_created == {{ auth()->id() }}) {
+                            html += 'style="color: blue"'
+                        }
                         html += '>' + response.content_text + '</div>';
                         $('#list_message').append(html)
                     },

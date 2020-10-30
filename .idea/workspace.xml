@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e82ed42-8343-4bf8-8ab4-9ec3a9de6490" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/Repositories/RoomRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/css/message/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/FriendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/FriendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Repositories/FriendRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/FriendRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Room.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Repositories/MessageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/MessageRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/views/friend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/friend/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/logs/laravel.log" afterDir="false" />
     </list>
@@ -70,7 +71,6 @@
       <path value="$PROJECT_DIR$/src/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/src/vendor/composer" />
@@ -156,6 +156,8 @@
       <path value="$PROJECT_DIR$/src/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/src/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/src/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php70" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iDLD1a7vbsWzEMEp8l3LCWbySm" />
@@ -167,7 +169,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/Repositories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/public/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -176,10 +178,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hungk\OneDrive\Máy tính\Do-an-tot-nghiep\src\public\css" />
+      <recent name="C:\Users\hungk\OneDrive\Máy tính\Do-an-tot-nghiep\src\app\Repositories" />
       <recent name="C:\Users\Admin\Desktop\Do-an-tot-nghiep\src\app\Repositories" />
       <recent name="C:\Users\Admin\Desktop\Do-an-tot-nghiep\src\public\css" />
       <recent name="C:\Users\Admin\Desktop\Do-an-tot-nghiep\src\resources\views" />
-      <recent name="C:\Users\Admin\Desktop\Do-an-tot-nghiep\src\resources\views\message" />
     </key>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
@@ -188,7 +191,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9a755f45-705c-4d4a-af2c-9d6f5ca7c172" name="Default Changelist" comment="" />
+      <changelist id="1e82ed42-8343-4bf8-8ab4-9ec3a9de6490" name="Default Changelist" comment="" />
       <created>1601437094157</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -200,11 +203,13 @@
       <workItem from="1602833462137" duration="324000" />
       <workItem from="1602900100938" duration="7573000" />
       <workItem from="1603090765031" duration="12250000" />
+      <workItem from="1603800513266" duration="16000" />
+      <workItem from="1604069789175" duration="3807000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -219,6 +224,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604071137176">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604071137176" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1603800526306">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603800526306" />
     <state x="531" y="153" key="NewPhpClassDialog" timestamp="1602813785447">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -236,10 +249,10 @@
     </state>
     <state x="556" y="209" width="555" height="534" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1603101006163" />
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601437322959" />
-    <state x="519" y="187" width="788" height="562" key="search.everywhere.popup" timestamp="1603092278197">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1604070932009">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601570957802" />
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604070932009" />
     <state x="519" y="187" width="788" height="562" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603092278197" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601437183822" />
   </component>

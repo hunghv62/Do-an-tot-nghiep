@@ -4,22 +4,47 @@ namespace App\Http\Controllers;
 
 use App\Events\MyEvent;
 use App\Models\Message;
+use App\Models\Room;
 use Illuminate\Http\Request;
 use App\Repositories\MessageRepository;
+use App\Repositories\RoomRepository;
 
 class MessageController extends Controller
 {
     protected $messageRepository;
+    protected $roomRepository;
 
-    public function __construct(MessageRepository $messageRepository)
+    public function __construct(
+        MessageRepository $messageRepository,
+        RoomRepository $roomRepository
+    )
     {
         $this->messageRepository = $messageRepository;
+        $this->roomRepository = $roomRepository;
     }
 
-    public function getMessage()
+    public function getMessage(Request $request)
     {
-        $this->messageRepository->getAll();
-        return view('message.index');
+        $room = '';
+        if ($request->id) {
+            // make room chat
+            $room = $this->roomRepository->findRoom(auth()->id(), $request->id);
+            if (!$room) {
+                try {
+                    $room = $this->roomRepository->store([
+                        'user_created' => auth()->id(),
+                        'user_join' => $request->id,
+                        'type' => Room::PRIVATE
+                    ]);
+                } catch (\Exception $exception) {
+                    return back()->with('error', $exception->getMessage());
+                }
+            }
+
+        }
+        return view('message.index', [
+            'room_id' => $room->id ?? ''
+        ]);
     }
 
     public function storeMessage(Request $request)
@@ -37,7 +62,10 @@ class MessageController extends Controller
         } catch (\ErrorException $e) {
             return responseError($e->getCode(), $e->getMessage());
         }
+    }
 
-
+    public function createMessage(Request $request)
+    {
+        dd($request->all());
     }
 }
