@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1e82ed42-8343-4bf8-8ab4-9ec3a9de6490" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/css/message/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/css/message/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/src/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/message/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +200,7 @@
       <workItem from="1603090765031" duration="12250000" />
       <workItem from="1603800513266" duration="16000" />
       <workItem from="1604069789175" duration="7632000" />
+      <workItem from="1604241504824" duration="4417000" />
     </task>
     <servers />
   </component>

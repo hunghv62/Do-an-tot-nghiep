@@ -37,8 +37,6 @@
 </head>
 <body>
     @yield('style')
-        @yield('script')
-
     <div id="app">
         <div class="menu">
             <div class="menuContainer">
@@ -123,7 +121,7 @@
             @yield('content')
         </main>
     </div>
+    @yield('script')
     @include('layouts.toastr')
-
 </body>
 </html>

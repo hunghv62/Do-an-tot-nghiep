@@ -5481,3 +5481,45 @@ Did you mean one of these?
 #52 /var/www/app/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #53 {main}
 "} 
+[2020-11-01 15:37:36] local.INFO: Broadcasting [my-event] on channels [private-message] with payload:
+{
+    "message": "sdfsdf",
+    "user_created": 1,
+    "socket": null
+}  
+[2020-11-01 15:38:19] local.INFO: Broadcasting [my-event] on channels [private-message] with payload:
+{
+    "message": "sdfsdf",
+    "user_created": 1,
+    "socket": null
+}  
+[2020-11-01 15:39:14] local.INFO: Broadcasting [my-event] on channels [private-message] with payload:
+{
+    "message": "dfsdf",
+    "user_created": 1,
+    "socket": null
+}  
+[2020-11-01 15:39:25] local.INFO: Broadcasting [my-event] on channels [private-message] with payload:
+{
+    "message": "dfsdf",
+    "user_created": 2,
+    "socket": null
+}  
+[2020-11-01 15:41:05] local.INFO: Broadcasting [my-event] on channels [private-message] with payload:
+{
+    "message": "sdfsdfsd",
+    "user_created": 2,
+    "socket": null
+}  
+[2020-11-01 15:41:21] local.INFO: Broadcasting [my-event] on channels [private-message] with payload:
+{
+    "message": "dasd",
+    "user_created": 1,
+    "socket": null
+}  
+[2020-11-01 15:47:47] local.INFO: Broadcasting [my-event] on channels [private-message] with payload:
+{
+    "message": "sdasdas",
+    "user_created": 1,
+    "socket": null
+}  
