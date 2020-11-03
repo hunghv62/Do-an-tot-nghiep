@@ -23,7 +23,7 @@ class MessageController extends Controller
         $this->roomRepository = $roomRepository;
     }
 
-    public function getMessage(Request $request)
+    public function create(Request $request)
     {
         $room = '';
         if ($request->id) {
@@ -42,8 +42,18 @@ class MessageController extends Controller
             }
 
         }
+        return redirect()->route('message.index', $room->id);
+
+    }
+
+    public function getMessage(Request $request)
+    {
+        $room_id = $request->room_id;
+        if (!$room_id) {
+            $room_id = $this->roomRepository->getFirstRoom(auth()->id())->id ?? '';
+        }
         return view('message.index', [
-            'room_id' => $room->id ?? ''
+            'room_id' => $room_id ?? ''
         ]);
     }
 
@@ -53,19 +63,14 @@ class MessageController extends Controller
             $message = $request->message;
             $data = [
                 'user_created' => auth()->id(),
-                'room_id' => 1,
+                'room_id' => $request->room_id,
                 'content_text' => $request->message
             ];
             $this->messageRepository->store($data);
-            event(new MyEvent($message, auth()->id()));
+            event(new MyEvent($message, auth()->id(), $request->room_id));
             return responseOK($data);
         } catch (\ErrorException $e) {
             return responseError($e->getCode(), $e->getMessage());
         }
-    }
-
-    public function createMessage(Request $request)
-    {
-        dd($request->all());
     }
 }

@@ -15,17 +15,19 @@ class MyEvent implements ShouldBroadcast
 
     public $message;
     public $user_created;
+    public $room_id;
 
-    public function __construct($message, $user_created)
+    public function __construct($message, $user_created, $room_id)
     {
         $this->message = $message;
         $this->user_created = $user_created;
+        $this->room_id = $room_id;
     }
 
     public function broadcastOn()
     {
 //        return new Channel('my-channel');
-        return new PrivateChannel('message');
+        return new PrivateChannel('message.' . $this->room_id);
     }
 
     public function broadcastAs()
@@ -37,7 +39,8 @@ class MyEvent implements ShouldBroadcast
     {
         return [
             'message' => $this->message,
-            'user_created' => $this->user_created
+            'user_created' => $this->user_created,
+            'room_id' => $this->room_id,
         ];
     }
 }

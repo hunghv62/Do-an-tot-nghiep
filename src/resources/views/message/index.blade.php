@@ -125,6 +125,7 @@
     <form id="sendMessage">
         @csrf
         <input type="text" name="message">
+        <input type="hidden" name="room_id" value="{{ $room_id }}">
         <button type="button" id="sendButton">Send</button>
     </form>
 </div>
@@ -185,11 +186,11 @@
                     'X-CSRF-Token': '{{ csrf_token() }}'
                 }
             },
-            authEndpoint: '{{ route('pusherAuth') }}'
+            authEndpoint: '{{ route('pusherAuth', $room_id) }}'
         });
 
         // var channel = pusher.subscribe('my-channel');
-        var channel = pusher.subscribe('private-message');
+        var channel = pusher.subscribe('private-message.' + '{{ $room_id }}');
         channel.bind('my-event', function (data) {
             if (data.user_created != {{ auth()->id() }}) {
                 let html = '<div>' + data.message + '</div>';

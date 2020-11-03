@@ -1,3 +1,13 @@
+cài đặt:
+1: docker-compose up -d --build
+2: docker-compose exec node-api ash
+3: npm install
+4: exit
+5: docker-compose exec app bash
+6: composer install
+7: php artisan migrate
+8: php artisan db:seed
+
 ***lưu vào db: id phòng chat, còn lưu như nào tính sau, type phòng chat: 1vs1, group chat (>=2), bài viết (comment)
 I. chat 1 vs 1
 1-khi call event -> append message bằng jquery, đồng thời call ajax lưu message vào db khi có bất kỳ thay đổi nào tại khung chat (khi append xong)

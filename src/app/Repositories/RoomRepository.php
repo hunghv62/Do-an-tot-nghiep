@@ -25,4 +25,9 @@ class RoomRepository
     {
         return Room::where('user_created', $user_id)->where('user_join', $friend_id)->first();
     }
+
+    public function getFirstRoom($user_id)
+    {
+        return Room::orWhere('user_created', $user_id)->orWhere('user_join', $user_id)->first();
+    }
 }

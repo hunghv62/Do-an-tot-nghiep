@@ -36,12 +36,12 @@ class UserController extends Controller
         return redirect()->route('index');
     }
 
-    public function pusherAuth()
+    public function pusherAuth($room_id)
     {
         $user = auth()->user();
         if ($user) {
             $pusher = new \Pusher\Pusher(config('broadcasting.connections.pusher.key'), config('broadcasting.connections.pusher.secret'), config('broadcasting.connections.pusher.app_id'));
-            echo $pusher->socket_auth('private-message', request()->input('socket_id'));
+            echo $pusher->socket_auth('private-message.' . $room_id, request()->input('socket_id'));
             return;
         }else {
             header('', true, 403);
